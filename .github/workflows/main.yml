@@ -9,7 +9,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Setup AWS Copilot
-      uses: gowthamsrikrish/setup-aws-copilot@v1.3
+      uses: gowthamsrikrish/setup-aws-copilot
     - run: |
         copilot --version
         aws --version
