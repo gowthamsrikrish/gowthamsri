@@ -1,9 +1,16 @@
-# This is a basic workflow to help you get started with Actions
+name: main
 
-name: CI
+on: push
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-  - run: echo Hello, world!
+  ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Setup AWS Copilot
+      uses: flemzord/setup-aws-copilot@v1.3
+      with:
+        version: copilot --version
+        
+ 
