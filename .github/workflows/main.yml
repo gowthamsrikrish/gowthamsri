@@ -2,6 +2,11 @@ name: main
 
 on: push
 
+env:
+  LAUNCHABLE_TOKEN: ${{ secrets.LAUNCHABLE_TOKEN_PYTHONAPP }}
+  LAUNCHABLE_DEBUG: 1
+  LAUNCHABLE_REPORT_ERROR: 1
+  
 jobs:
   ubuntu:
     runs-on: ubuntu-latest
