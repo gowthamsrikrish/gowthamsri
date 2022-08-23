@@ -3,7 +3,7 @@ name: main
 on: push
 
 env:
-  LAUNCHABLE_TOKEN: ${{ secrets.GITHUBTOKEN }}
+  LAUNCHABLE_TOKEN: v1:nenu-local/my-python-app:726dd5ae7767448ebae56bfa306bdf37
   LAUNCHABLE_DEBUG: 1
   LAUNCHABLE_REPORT_ERROR: 1
   
